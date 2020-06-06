@@ -16,11 +16,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    batterywidget.cpp \
+    datetimewidget.cpp \
     main.cpp \
-    primarywidget.cpp
+    paintedwidget.cpp \
+    primarywidget.cpp \
+    systemloadwidget.cpp \
+    widget.cpp
 
 HEADERS += \
-    primarywidget.h
+    batterywidget.h \
+    datetimewidget.h \
+    paintedwidget.h \
+    primarywidget.h \
+    systemloadwidget.h \
+    widget.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -2,22 +2,14 @@
 #define PRIMARYWIDGET_H
 
 #include <QWidget>
+#include <chrono>
 
-class PrimaryWidget : public QWidget
+#include "widget.h"
+
+class PrimaryWidget : public Widget
 {
-    Q_OBJECT
 public:
     explicit PrimaryWidget(QWidget *parent = nullptr);
-
-protected:
-    virtual void paintEvent(QPaintEvent *event) override;
-
-signals:
-
-private:
-    qintptr timer_id;
-
-    void drawTime(QPainter *painter);
 };
 
 #endif // PRIMARYWIDGET_H
