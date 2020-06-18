@@ -25,7 +25,7 @@ PrimaryWidget::PrimaryWidget(QWidget *parent) :
     QRect size = QApplication::primaryScreen()->geometry();
 
     int width = 400;
-    int height = 295;
+    int height = 400;
 
     setGeometry(size.width() - (width + 40), size.y() + 40, width, height);
 
