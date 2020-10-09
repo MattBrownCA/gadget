@@ -6,7 +6,7 @@
 class PaintedWidget : public Widget
 {
 public:
-    PaintedWidget(QWidget *parent = nullptr);
+    PaintedWidget(const std::string &name, Widget *parent = nullptr);
 
 protected:
     void setPaintInterval(uint32_t ms);

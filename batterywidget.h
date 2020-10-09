@@ -6,7 +6,7 @@
 class BatteryWidget : public PaintedWidget
 {
 public:
-    BatteryWidget(QWidget *parent = nullptr);
+    BatteryWidget(Widget *parent = nullptr);
 
 protected:
     virtual void paintWidget(QPainter *painter) override;

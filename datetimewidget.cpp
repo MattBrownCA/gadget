@@ -3,8 +3,8 @@
 #include <QTimer>
 #include <QPainter>
 
-DateTimeWidget::DateTimeWidget(QWidget *parent)
-    : PaintedWidget(parent)
+DateTimeWidget::DateTimeWidget(Widget *parent)
+    : PaintedWidget("DateTime", parent)
 {
     setPaintInterval(1000);
 

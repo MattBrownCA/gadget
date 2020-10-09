@@ -9,7 +9,7 @@
 class PrimaryWidget : public Widget
 {
 public:
-    explicit PrimaryWidget(QWidget *parent = nullptr);
+    explicit PrimaryWidget(Widget *parent = nullptr);
 };
 
 #endif // PRIMARYWIDGET_H

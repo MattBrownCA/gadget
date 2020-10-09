@@ -6,7 +6,7 @@
 class DateTimeWidget : public PaintedWidget
 {
 public:
-    DateTimeWidget(QWidget *parent = nullptr);
+    DateTimeWidget(Widget *parent = nullptr);
 
 protected:
     virtual void paintWidget(QPainter *painter) override;

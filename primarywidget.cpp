@@ -18,8 +18,8 @@
 #include "batterywidget.h"
 #include "systemloadwidget.h"
 
-PrimaryWidget::PrimaryWidget(QWidget *parent) :
-    Widget(parent)
+PrimaryWidget::PrimaryWidget(Widget *parent) :
+    Widget("Primary", parent)
 {
     //setWindowOpacity(0);
     QRect size = QApplication::primaryScreen()->geometry();
@@ -37,6 +37,4 @@ PrimaryWidget::PrimaryWidget(QWidget *parent) :
     layout->addWidget(new SystemLoadWidget());
 
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
-
-    //layout->addItem(new QSpacerItem(0, 0, QSizePolicy::Fixed, QSizePolicy::Expanding));
 }

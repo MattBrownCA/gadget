@@ -4,8 +4,8 @@
 #include <QString>
 #include <QDebug>
 
-BatteryWidget::BatteryWidget(QWidget *parent)
-    : PaintedWidget(parent)
+BatteryWidget::BatteryWidget(Widget *parent)
+    : PaintedWidget("Battery", parent)
 {
     setPaintInterval(5000);
     setMinimumHeight(20);

@@ -4,8 +4,8 @@
 #include <QTimer>
 #include <QDebug>
 
-PaintedWidget::PaintedWidget(QWidget *parent) :
-    Widget(parent)
+PaintedWidget::PaintedWidget(const std::string &name, Widget *parent) :
+    Widget(name, parent)
 {
 
 }
